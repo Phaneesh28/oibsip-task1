@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingStart="16dp"
+    android:paddingEnd="16dp"
+    android:paddingTop="32dp"
+    android:paddingBottom="32dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/valueInputLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter Value:"
+        android:textSize="16sp"
+        android:textStyle="bold"/>
+
+    <EditText
+        android:id="@+id/valueInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/valueInputLabel"
+        android:layout_marginTop="8dp"
+        android:hint="Enter value"
+        android:inputType="numberDecimal"/>
+
+    <TextView
+        android:id="@+id/unitSpinnerLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/valueInput"
+        android:layout_marginTop="16dp"
+        android:text="Select Unit:"
+        android:textSize="16sp"
+        android:textStyle="bold"/>
+
+    <Spinner
+        android:id="@+id/unitSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/unitSpinnerLabel"
+        android:layout_marginTop="8dp"/>
+
+    <Button
+        android:id="@+id/convertButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/unitSpinner"
+        android:layout_marginTop="32dp"
+        android:text="Convert"/>
+
+    <TextView
+        android:id="@+id/resultText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/convertButton"
+        android:layout_marginTop="32dp"
+        android:textSize="18sp"/>
+
+</RelativeLayout>
